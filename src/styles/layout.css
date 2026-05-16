@@ -1,0 +1,89 @@
+.app-shell {
+  display: grid;
+  grid-template-columns: 340px minmax(0, 1fr);
+  min-height: 100vh;
+}
+
+.lesson-content {
+  min-width: 0;
+  padding: 48px clamp(28px, 6vw, 88px) 56px;
+}
+
+.lesson-hero {
+  padding: 0 0 30px;
+  border-bottom: 1px solid var(--line);
+}
+
+.lesson-hero h1 {
+  margin: 6px 0 16px;
+  color: var(--ink);
+  font-size: 2rem;
+  line-height: 0.98;
+  letter-spacing: 0;
+}
+
+.lesson-hero p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.08rem;
+  line-height: 1.75;
+}
+
+.eyebrow {
+  color: var(--jest-red) !important;
+  font-size: 0.82rem !important;
+  font-weight: 850;
+  letter-spacing: 0 !important;
+  text-transform: uppercase;
+}
+
+.tabs {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 26px 0 10px;
+  padding: 4px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #e8eee1;
+}
+
+.tab {
+  min-width: 104px;
+  min-height: 40px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: #566054;
+  font-weight: 800;
+}
+
+.tab-active {
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: var(--shadow-tight);
+}
+
+.complete-button {
+  min-height: 46px;
+  padding: 0 18px;
+  border-radius: 8px;
+  font-weight: 850;
+}
+
+.complete-button {
+  border: 1px solid var(--accent-strong);
+  background: var(--accent-strong);
+  color: #fff;
+}
+
+.complete-button-done {
+  border-color: #d6ddd8;
+  background: #d6ddd8;
+  color: #5c6560;
+  box-shadow: none;
+  cursor: default;
+}
+
+.complete-button-done:hover {
+  transform: none;
+}

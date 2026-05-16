@@ -1,0 +1,27 @@
+.lesson-section {
+  padding: 26px 0 6px;
+}
+
+.lesson-section h2 {
+  margin: 0 0 12px;
+  color: var(--ink);
+  font-size: 1.15rem;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+.lesson-section p {
+  margin: 0 0 14px;
+  color: var(--ink-soft);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.lesson-section code:not(pre code) {
+  padding: 2px 5px;
+  border: 1px solid #d4e3cc;
+  border-radius: 5px;
+  background: var(--accent-soft);
+  color: #17621b;
+  font-size: 0.94em;
+}

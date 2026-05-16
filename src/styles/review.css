@@ -1,0 +1,53 @@
+.review-list {
+  display: grid;
+  gap: 14px;
+  padding: 28px 0 12px;
+}
+
+.review-item {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: 0 4px 14px rgba(31, 35, 40, 0.04);
+}
+
+.review-item[open] {
+  border-color: var(--line-strong);
+}
+
+.review-item summary {
+  display: grid;
+  grid-template-columns: 24px minmax(0, 1fr);
+  align-items: center;
+  gap: 10px;
+  min-height: 64px;
+  padding: 14px 18px;
+  color: var(--ink);
+  font-weight: 850;
+  list-style: none;
+  cursor: pointer;
+}
+
+.review-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.review-item summary span {
+  color: var(--jest-red);
+  font-variant-numeric: tabular-nums;
+}
+
+.review-item p {
+  margin: 0;
+  padding: 0 18px 18px 70px;
+  color: var(--ink-soft);
+  line-height: 1.75;
+}
+
+.review-actions {
+  display: flex;
+  justify-content: flex-start;
+  margin: 24px 0 0;
+  padding: 22px 0 0;
+  border-top: 1px solid var(--line);
+}
