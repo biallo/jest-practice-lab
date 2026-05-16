@@ -163,13 +163,13 @@
 }
 
 .lesson-item small {
-  display: -webkit-box;
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   overflow: hidden;
   color: #d7dee8;
   font-size: 0.86rem;
   line-height: 1.46;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
 }
 
 .done-pill {
