@@ -52,6 +52,7 @@ function App() {
   return (
     <main className="app-shell">
       <LessonList
+        lessons={lessons}
         selectedLessonId={selectedLesson.id}
         completedLessons={completedLessons}
         onSelect={selectLesson}

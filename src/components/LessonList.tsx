@@ -1,15 +1,23 @@
-import { MutableRefObject, RefObject } from "react";
-import { lessons } from "../data/lessons";
+import { RefObject } from "react";
+import { Lesson } from "../data/lessons";
 
 type LessonListProps = {
+  lessons: Lesson[];
   selectedLessonId: string;
   completedLessons: Set<string>;
   onSelect: (lessonId: string) => void;
   listRef: RefObject<HTMLDivElement | null>;
-  itemRefs: MutableRefObject<Record<string, HTMLButtonElement | null>>;
+  itemRefs: RefObject<Record<string, HTMLButtonElement | null>>;
 };
 
-export function LessonList({ selectedLessonId, completedLessons, onSelect, listRef, itemRefs }: LessonListProps) {
+export function LessonList({
+  lessons,
+  selectedLessonId,
+  completedLessons,
+  onSelect,
+  listRef,
+  itemRefs
+}: LessonListProps) {
   const progress = Math.round((completedLessons.size / lessons.length) * 100);
 
   return (
