@@ -8,6 +8,8 @@ import { setupTeardown } from "./setup-teardown";
 import { reactTesting } from "./react-testing";
 import { snapshots } from "./snapshots";
 import { coverage } from "./coverage";
+import { configuration } from "./configuration";
+import { fakeTimers } from "./fake-timers";
 import { watchMode } from "./watch-mode";
 import { testingStrategy } from "./testing-strategy";
 import { Lesson } from "./types";
@@ -25,6 +27,8 @@ export const lessons: Lesson[] = [
   reactTesting,
   snapshots,
   coverage,
+  configuration,
+  fakeTimers,
   watchMode,
   testingStrategy
 ];

@@ -49,7 +49,7 @@ export function LessonBody({ lesson, activeTab, completed, onComplete }: LessonB
         </section>
       ))}
 
-      <section className="lesson-section">
+      <section className="lesson-section lesson-examples-section">
         <h2>示例代码</h2>
         {lesson.examples.map((example) => (
           <CodeBlock example={example} key={example.title} />

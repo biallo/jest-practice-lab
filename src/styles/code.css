@@ -1,25 +1,25 @@
 .code-card {
   overflow: hidden;
-  margin: 18px 0 24px;
-  border: 1px solid #d8dfd3;
+  margin: 16px 0 26px;
+  border: 1px solid #dfe5dc;
   border-radius: 8px;
   background: #fbfcf8;
-  box-shadow: 0 10px 26px rgba(31, 35, 40, 0.08);
+  box-shadow: 0 6px 18px rgba(31, 35, 40, 0.06);
 }
 
 .code-card figcaption {
-  padding: 11px 16px;
+  padding: 10px 16px;
   border-bottom: 1px solid #e2e8dc;
-  background: #f1f5ec;
+  background: #f5f7f1;
   color: #26312a;
-  font-size: 0.9rem;
-  font-weight: 850;
+  font-size: 0.86rem;
+  font-weight: 800;
 }
 
 .code-card pre {
   margin: 0;
   overflow-x: auto;
-  padding: 12px 0;
+  padding: 10px 0;
 }
 
 .code-card code {
@@ -28,13 +28,13 @@
   color: #24292f;
   font-family:
     "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
-  font-size: 0.92rem;
-  line-height: 1.7;
+  font-size: 0.9rem;
+  line-height: 1.68;
 }
 
 .code-line {
   display: grid;
-  grid-template-columns: 46px minmax(0, 1fr);
+  grid-template-columns: 44px minmax(0, 1fr);
   min-height: 24px;
   padding-right: 18px;
 }
@@ -51,5 +51,5 @@
 }
 
 .code-line-content {
-  padding-left: 16px;
+  padding-left: 14px;
 }

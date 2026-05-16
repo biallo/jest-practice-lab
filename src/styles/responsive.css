@@ -41,7 +41,7 @@
   }
 
   .lesson-content {
-    padding: 30px 18px 44px;
+    padding: 28px 18px 44px;
   }
 
   .lesson-hero h1 {
@@ -59,8 +59,12 @@
   }
 
   .code-card {
-    margin-right: -6px;
-    margin-left: -6px;
+    margin-right: -2px;
+    margin-left: -2px;
+  }
+
+  .lesson-section {
+    padding-left: 14px;
   }
 
   .review-item summary {
