@@ -12,3 +12,23 @@
 npm install
 npm run dev
 ```
+
+## 测试
+
+运行全部 Jest 测试：
+
+```shell
+npm test
+```
+
+开发时可以使用 watch 模式：
+
+```shell
+npx jest --watch
+```
+
+只运行某个测试文件：
+
+```shell
+npx jest src/hooks/useCompletedLessons.test.tsx
+```
