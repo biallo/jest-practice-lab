@@ -1,10 +1,9 @@
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { LessonBody } from "./components/LessonBody";
 import { LessonList } from "./components/LessonList";
-import { LessonTabs } from "./components/LessonTabs";
+import { LessonTab, LessonTabs } from "./components/LessonTabs";
 import { lessons } from "./data/lessons";
 import { useCompletedLessons } from "./hooks/useCompletedLessons";
-import { LessonTab } from "./types/ui";
 import { isElementFullyVisible, readLessonFromHash, syncLessonHash } from "./utils/lessonNavigation";
 
 function App() {

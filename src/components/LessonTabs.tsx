@@ -1,4 +1,4 @@
-import { LessonTab } from "../types/ui";
+export type LessonTab = "explain" | "review";
 
 type LessonTabsProps = {
   activeTab: LessonTab;

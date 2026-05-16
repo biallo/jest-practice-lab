@@ -1,5 +1,5 @@
 import { Lesson } from "../data/lessons";
-import { LessonTab } from "../types/ui";
+import { LessonTab } from "./LessonTabs";
 import { CodeBlock } from "./CodeBlock";
 
 type LessonBodyProps = {
