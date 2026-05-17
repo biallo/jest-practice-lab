@@ -10,7 +10,6 @@
 }
 
 .lesson-hero {
-  max-width: 860px;
   padding: 0 0 30px;
   border-bottom: 1px solid var(--line);
 }
@@ -24,7 +23,6 @@
 }
 
 .lesson-hero p {
-  max-width: 760px;
   margin: 0;
   color: var(--muted);
   font-size: 1.02rem;
@@ -47,10 +45,6 @@
   border: 1px solid var(--line);
   border-radius: 8px;
   background: #e8eee1;
-}
-
-.tab-panel {
-  max-width: 860px;
 }
 
 .tab {

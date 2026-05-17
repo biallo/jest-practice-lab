@@ -32,3 +32,10 @@ npx jest --watch
 ```shell
 npx jest src/hooks/useCompletedLessons.test.tsx
 ```
+
+
+## 编译和构建
+
+```shell
+npm run build
+```

@@ -1,7 +1,7 @@
 .lesson-section {
   position: relative;
   margin: 0 0 22px;
-  padding: 4px 0 2px 18px;
+  padding: 4px 0 0 18px;
   border-left: 2px solid #dfe7d8;
 }
 
@@ -14,7 +14,6 @@
 }
 
 .lesson-section p {
-  max-width: 78ch;
   margin: 0 0 16px;
   color: #4d5652;
   font-size: 0.98rem;
