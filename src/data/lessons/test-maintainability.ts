@@ -4,7 +4,7 @@ export const testMaintainability: Lesson = {
   id: "test-maintainability",
   title: "测试可维护性重构",
   eyebrow: "Lesson 22",
-  summary: "识别测试坏味道：过度 Mock、脆弱快照、setup 过重、断言混乱和实现细节绑定。",
+  summary: "识别测试中的维护性问题：过度 Mock、脆弱快照、setup 过重、断言混乱和实现细节绑定。",
   sections: [
     {
       heading: "测试也需要重构",
@@ -14,7 +14,7 @@ export const testMaintainability: Lesson = {
       ]
     },
     {
-      heading: "常见坏味道",
+      heading: "常见维护性问题",
       body: [
         "测试名称模糊、一个测试验证太多行为、beforeEach 准备了大量不相关数据、Mock 了所有依赖、快照巨大、断言内部 state，都是维护性问题。",
         "这些问题会直接导致重构困难。实现稍微调整，测试就成片失败，但用户行为其实没有坏。"
@@ -60,7 +60,7 @@ test("allows paying draft orders", () => {
   ],
   reviews: [
     {
-      question: "测试坏味道会造成什么后果？",
+      question: "测试中的维护性问题会造成什么后果？",
       answer: "测试变慢、脆弱、难读，团队会逐渐不信任测试结果。"
     },
     {
