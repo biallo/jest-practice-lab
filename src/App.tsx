@@ -11,6 +11,7 @@ function App() {
   const [activeTab, setActiveTab] = useState<LessonTab>("explain");
   const { completedLessons, markLessonCompleted } = useCompletedLessons();
   const listRef = useRef<HTMLDivElement>(null);
+  const contentRef = useRef<HTMLElement>(null);
   const itemRefs = useRef<Record<string, HTMLButtonElement | null>>({});
   const didInitialScroll = useRef(false);
 
@@ -42,6 +43,15 @@ function App() {
     }
   }, [selectedLessonId]);
 
+  useLayoutEffect(() => {
+    if (contentRef.current) {
+      contentRef.current.scrollTop = 0;
+      contentRef.current.scrollLeft = 0;
+    }
+
+    window.scrollTo({ top: 0, left: 0 });
+  }, [selectedLessonId]);
+
   function selectLesson(lessonId: string) {
     setSelectedLessonId(lessonId);
     setActiveTab("explain");
@@ -60,7 +70,7 @@ function App() {
         itemRefs={itemRefs}
       />
 
-      <article className="lesson-content">
+      <article className="lesson-content" ref={contentRef}>
         <header className="lesson-hero">
           <div>
             <p className="eyebrow">{selectedLesson.eyebrow}</p>
