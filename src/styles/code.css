@@ -24,12 +24,12 @@
 
 .code-card code {
   display: block;
-  min-width: max-content;
   color: #24292f;
   font-family:
     "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
   font-size: 0.9rem;
   line-height: 1.68;
+  white-space: pre-wrap;
 }
 
 .code-line {
