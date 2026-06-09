@@ -132,7 +132,7 @@
     transform 160ms ease;
 }
 
-.lesson-item:hover {
+.lesson-item:not(.lesson-item-active):hover {
   border-color: rgba(255, 255, 255, 0.16);
   background: rgba(255, 255, 255, 0.075);
 }
