@@ -76,7 +76,7 @@ export function LessonList({
             >
               <span className="lesson-item-meta">
                 <span>{lesson.eyebrow}</span>
-                {completed ? <span className="done-pill">已完成</span> : null}
+                {completed ? <span className="done-pill">✓</span> : null}
               </span>
               <strong>{lesson.title}</strong>
               <small>{lesson.summary}</small>

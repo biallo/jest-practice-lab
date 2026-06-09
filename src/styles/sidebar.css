@@ -173,14 +173,13 @@
 }
 
 .done-pill {
-  display: inline-flex;
-  flex: 0 0 auto;
-  padding: 2px 7px;
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.12);
   color: #e5edf6;
-  font-size: 0.72rem;
-  line-height: 1.4;
-  text-transform: none;
+  font-size: 0.65rem;
 }
